@@ -1,0 +1,179 @@
+@font-face {
+    src: url(/fonts/EduTASBeginner-Medium.ttf);
+    font-family: EduTASBeginner-Medium;
+}
+
+#A {
+    float: left;
+    display: flow-root;
+}
+
+header {
+    border: solid brown;
+    color: #0b0a0a;
+    background-color: #fdf7f7;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1::first-letter {
+    font-size: 120px;
+}
+
+header p::selection {
+    background-color: #0b0b0b;
+    color: hsl(0, 6%, 97%);
+}
+
+button {
+    background-color: red;
+    border-radius: 15px;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+#links {
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+
+}
+
+a:hover {
+    font-size: larger;
+}
+
+a:active {
+    background-color: #060606;
+}
+
+a:visited {
+    color: mediumwhite;
+}
+
+footer {
+    background-color: navy;
+}
+
+#s {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+
+.pagination {
+    text-align: center;
+    display: inline;
+    padding: 3em;
+    color: black;
+}
+
+#xos {
+    border-radius: 15px;
+    border: solid blue;
+    background-color: white;
+}
+
+.pagination a:hover:not(#xos) {
+    background-color: tomato;
+    font-size: smaller;
+}
+
+#menu {
+    background-color: rgb(135, 137, 137);
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 10px 15px;
+}
+
+/* .content a {
+    display: block;
+    display: none; */
+/* } */
+.dropdown .content {
+    background-color: grey;
+    box-shadow: 10px 15px 8px;
+    border-radius: 15px;
+    max-width: 100px;
+    display: block;
+    display: none;
+}
+
+.dropdown:hover .content {
+    display: block;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.navbar ul {
+    background-color: rgb(36, 35, 35);
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+
+    /* overflow: hidden; */
+}
+
+.navbar a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    justify-content: space-between;
+}
+
+/* .navbar li {
+    float: left;
+} */
+.navbar {
+    width: 450px;
+    border-radius: 10px;
+    margin-left: 25px;
+}
+
+section {
+    width: 20%;
+    /* float: left; */
+    padding: 10px;
+}
+
+article {
+    width: 40%;
+    padding: 10px;
+}
+
+aside {
+    width: 20%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#home {
+    animation-name: slideTop;
+    animation-duration: 2s;
+}
+
+@keyframes slideRight {
+    to {
+        transform: translateX(300%)
+    }
+}
+
+@keyframes slideTop {
+    from {
+        transform: translateY(300%)
+    }
+}
